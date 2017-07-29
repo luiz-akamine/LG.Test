@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html ng-app="LGTestUI" style="overflow: hidden; height: 100%; margin: 0; padding: 0; border: 0; position: fixed;">
+<head>
+    <title>LG Store Test</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--<base href="/" />-->
+    
+    <link rel="stylesheet" href="Content/mdl-v1.1.2/material-icons.css" />
+    <link rel="stylesheet" href="content/bootstrap.css" />
+    <link rel="stylesheet" href="Content/font-awesome.css" />
+    <link rel="stylesheet" href="content/bootstrap-social.css" />
+    <link rel="stylesheet" href="Content/mdl-v1.1.2/material.brow-red.min.css" />   
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="Content/angular-material.min.css" />   
+          
+    <style>
+        .background {
+            background: url(Images/background.jpg) center / cover;
+        }
+    </style>
+</head>
+<body style="position: fixed; overflow: hidden; height: 100%; margin: 0; padding: 0; border: 0;">
+    <div class="background mdl-layout mdl-js-layout mdl-layout--fixed-header" style="overflow: hidden">
+        
+        <!-- HEADER ini -->
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">LG Store Test</span>
+                <nav class="mdl-navigation" style="margin-left: auto; margin-right: auto">
+                    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                        <div class="mdl-tabs__tab-bar">
+                            <a id="callProduct" href="#callProduct" class="mdl-tabs__tab is-active mdl-color-text--white" style="text-decoration: none">Produtos</a>
+                            <a id="callCart" href="#callCart" class="mdl-tabs__tab mdl-color-text--white" style="text-decoration: none">Carrinho</a>
+                            <a id="callStock" href="#callStock" class="mdl-tabs__tab mdl-color-text--white" style="text-decoration: none">Estoque</a>
+                            <a id="callAbout" href="#callAbout" class="mdl-tabs__tab mdl-color-text--white" style="text-decoration: none">Sobre</a>
+                        </div>                        
+                    </div>    
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">LG Store Test</span>
+            <nav class="mdl-navigation">
+                <a href="#" class="mdl-navigation__link">Link 1</a>
+                <a href="#" class="mdl-navigation__link">Link 2</a>
+                <a href="#" class="mdl-navigation__link">Link 3</a>
+            </nav>
+        </div>
+        <!-- HEADER fim -->
+
+        <!-- CONTENT ini -->
+        <main class="mdl-layout__content">                        
+            <div ng-view=""></div>
+        </main>
+        <!-- CONTENT fim -->
+
+        <!-- FOOTER ini -->
+        <footer class="mdl-mini-footer mdl-color--blue-grey-900" style="padding-top: 0rem; padding-bottom: 0rem">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">LG Store Test</div>                
+            </div>
+            <div class="mdl-mini-footer__right-section">
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy & Terms</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- FOOTER fim -->
+    </div>        
+
+    <!--external js-->
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="Content/mdl-v1.1.2/material.min.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/angular-animate.min.js"></script>
+    <script src="scripts/angular-aria.min.js"></script>
+    <script src="scripts/angular-material.min.js"></script>    
+    <script src="scripts/moment.min.js"></script>    
+
+    <!-- Load app main script -->
+    <script src="app/app.js"></script>    
+
+    <!-- Load services -->   
+    <script src="app/Services/productsService.js"></script>
+    <script src="app/Services/stockService.js"></script>
+    <script src="app/Services/cartService.js"></script>
+    <script src="app/Services/orderService.js"></script>    
+
+    <!-- Load controllers -->
+    <script src="app/controllers/productsController.js"></script>
+    <script src="app/controllers/cartController.js"></script>
+    <script src="app/controllers/stockController.js"></script>
+    <script src="app/controllers/aboutController.js"></script>
+
+    <script>
+        $('a[href="#callProduct"]').on('click', function () {
+            location.href = '#!/product';
+        });
+        $('a[href="#callCart"]').on('click', function () {
+            location.href = '#!/cart';
+        });
+        $('a[href="#callStock"]').on('click', function () {
+            location.href = '#!/stock';
+        });
+        $('a[href="#callAbout"]').on('click', function () {
+            location.href = '#!/about';
+        });
+    </script>
+</body>
+</html>

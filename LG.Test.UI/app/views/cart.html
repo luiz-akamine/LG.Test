@@ -1,0 +1,73 @@
+﻿<div style="display: flex; align-content: space-between; justify-content: center; padding: 2rem">    
+    <div ng-show="cart.length > 0">
+        <!-- TABELA CONTENDO PRODUTOS DO CARRINHO -->
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable" style="border-radius: 5px;">
+            <thead>
+                <tr>
+                    <th style="text-align: center">Produto</th>
+                    <th style="text-align: center">Descrição</th>
+                    <th style="text-align: center">Foto</th>
+                    <th style="text-align: center">Preço Unitário</th>
+                    <th style="text-align: center">Quantidade</th>
+                    <th style="text-align: center">Total</th>
+                </tr>
+            </thead>
+            <tbody class="table-striped">
+                <tr ng-repeat="product in cart">
+                    <td style="text-align: center">{{product.name}}</td>
+                    <td style="text-align: center">{{product.description}}</td>
+                    <td style="text-align: center"><div ng-style="{'background':'url(' + product.picture +') center / cover'}" style="width: auto; height: 50px; background: center"></div></td>
+                    <td style="text-align: center">{{product.price | currency:'R$':2}}</td>
+                    <td style="text-align: center">
+                        <a ng-click="minusOne(product)" href=""><span class="glyphicon glyphicon-minus" style="margin-right: 0.5rem"></span></a>
+                        {{product.qty}}
+                        <a ng-click="plusOne(product)" href=""><span class="glyphicon glyphicon-plus" style="margin-left: 0.5rem"></span></a>
+                    </td>
+                    <td style="text-align: center">{{product.price * product.qty | currency:'R$':2}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- FINALIZAR PEDIDO -->
+        <div class="panel panel-success" style="margin-top: 2rem">
+            <div class="panel-heading">
+                <h5 style="margin: 0">Pagamento</h5>
+            </div>
+            <div class="panel-body" style="padding-bottom: 0">
+                <div style="display: flex; justify-content: center; align-items: center; align-content: space-between">
+                    <div style="flex: 1"><h5 style="margin-top: 0">Total: {{calcTotal() | currency:'R$':2 }}</h5></div>
+
+                    <div style="flex: 1">
+                        <md-radio-group ng-model="paymentType">
+                            <md-radio-button value="Cartao" class="md-primary">Cartão de Crédito</md-radio-button>
+                            <md-radio-button value="Boleto">Boleto</md-radio-button>
+                        </md-radio-group>
+                    </div>
+
+                    <div style="flex: 1">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" ng-click="confirmPayment($event)">
+                            Finalizar Pedido
+                        </button>
+                    </div>
+                </div>
+            </div>                       
+        </div>
+    </div>
+    <div ng-show="cart.length <= 0" style="align-content: center">
+        <div style="display: flex; flex-direction: column; align-content: center; justify-content: center; align-items: center">
+            <div style="flex: 2;">
+                <img src="../../Images/maodevaca.jpg" class="md-card-image" style="border-radius: 100%">
+            </div>
+            <div style="flex: 1">
+                <h4 style="color: white">Adicione algum Produto no Carrinho!</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PROGRESS -->
+<div ng-if="showProgress">
+    <md-progress-circular ng-disabled="!showProgress" class="md-hue-2" md-diameter="60px"
+                          style="position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%)">
+    </md-progress-circular>
+</div>

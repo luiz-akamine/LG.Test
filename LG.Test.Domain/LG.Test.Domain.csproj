@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D58D3EEF-250E-4376-A1FC-0357129A8767}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LG.Test.Domain</RootNamespace>
+    <AssemblyName>LG.Test.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\CartDTO.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\EntityBase.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\Stock.cs" />
+    <Compile Include="Entities\StockMov.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Interfaces\Applications\IApplicationBase.cs" />
+    <Compile Include="Interfaces\Applications\IUserApplication.cs" />
+    <Compile Include="Interfaces\Applications\IStockMovApplication.cs" />
+    <Compile Include="Interfaces\Applications\IStockApplication.cs" />
+    <Compile Include="Interfaces\Applications\IProductApplication.cs" />
+    <Compile Include="Interfaces\Applications\ICategoryApplication.cs" />
+    <Compile Include="Interfaces\Applications\IDBApplicationBase.cs" />
+    <Compile Include="Interfaces\Infra\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\Repositories\ICategoryRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IStockMovRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IStockRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Repositories\IProductRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IUserRepository.cs" />
+    <Compile Include="Interfaces\Services\IStockMovService.cs" />
+    <Compile Include="Interfaces\Services\IUnitOfWorkService.cs" />
+    <Compile Include="Interfaces\Services\IUserService.cs" />
+    <Compile Include="Interfaces\Services\IStockService.cs" />
+    <Compile Include="Interfaces\Services\IProductService.cs" />
+    <Compile Include="Interfaces\Services\ICategoryService.cs" />
+    <Compile Include="Interfaces\Services\IDBServiceBase.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

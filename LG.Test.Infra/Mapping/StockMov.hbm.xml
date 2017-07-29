@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="LG.Test.Domain"
+                   namespace="LG.Test.Domain.Entities">
+  <class name="StockMov" lazy="false">
+    <cache usage="nonstrict-read-write" />
+    <id name="Id">
+      <generator class ="identity" />
+    </id>
+    
+    <property name="DateTimeStamp" />
+    <property name="Qty" />
+
+    <many-to-one name="Product" column="ProductId" />
+    <many-to-one name="User" column="UserId" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+﻿<div style="display: flex; align-content: space-between; justify-content: center; padding: 2rem" ng-init="loadStock()">
+    <div>
+        <!-- TABELA DOS PRODUTOS DA BASE -->
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable" style="border-radius: 5px;">
+            <thead>
+                <tr>
+                    <th style="text-align: center">Produto</th>
+                    <th style="text-align: center">Descrição</th>
+                    <th style="text-align: center">Foto</th>                    
+                    <th style="text-align: center">Quantidade no Estoque</th>                    
+                </tr>
+            </thead>
+            <tbody class="table-striped">
+                <tr ng-repeat="product in stock">
+                    <td style="text-align: center">{{product.name}}</td>
+                    <td style="text-align: center">{{product.description}}</td>
+                    <td style="text-align: center"><div ng-style="{'background':'url(' + product.picture +') center / cover'}" style="width: auto; height: 50px; background: center"></div></td>
+                    <td style="text-align: center">
+                        <a ng-click="minusOne(product)" href=""><span class="glyphicon glyphicon-minus" style="margin-right: 0.5rem"></span></a>
+                        {{product.stock.qty}}
+                        <a ng-click="plusOne(product)" href=""><span class="glyphicon glyphicon-plus" style="margin-left: 0.5rem"></span></a>
+                    </td>                    
+                </tr>
+            </tbody>
+        </table>        
+    </div>    
+</div>
+
+<!-- PROGRESS -->
+<div ng-if="showProgress">
+    <md-progress-circular ng-disabled="!showProgress" class="md-hue-2" md-diameter="60px"
+                          style="position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%)">
+    </md-progress-circular>
+</div>

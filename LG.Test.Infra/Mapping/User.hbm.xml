@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="LG.Test.Domain"
+                   namespace="LG.Test.Domain.Entities">
+  <class name="User">
+    <cache usage="nonstrict-read-write" />
+    <id name="Id">
+      <generator class ="identity" />
+    </id>
+    
+    <property name="Name" unique="true" />
+    <property name="Password" />
+
+    <bag name="StockMovs">
+      <key column="UserId" />
+      <one-to-many class="StockMov" />
+    </bag>
+  </class>
+</hibernate-mapping>
