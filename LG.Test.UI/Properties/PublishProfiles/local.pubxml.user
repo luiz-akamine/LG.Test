@@ -10,7 +10,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="app/app.js">
-      <publishTime>07/30/2017 03:07:55</publishTime>
+      <publishTime>07/30/2017 13:17:32</publishTime>
     </File>
     <File Include="app/controllers/aboutController.js">
       <publishTime>07/28/2017 13:08:18</publishTime>
@@ -55,28 +55,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/27/2017 13:34:39</publishTime>
     </File>
     <File Include="bin/LG.Test.UI.dll">
-      <publishTime>07/30/2017 03:09:25</publishTime>
+      <publishTime>07/30/2017 13:17:44</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>11/30/2016 16:07:42</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.DependencyCollector.dll">
-      <publishTime>07/12/2016 11:45:42</publishTime>
+      <publishTime>12/07/2016 11:45:42</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
-      <publishTime>07/12/2016 11:50:34</publishTime>
+      <publishTime>12/07/2016 11:50:34</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
-      <publishTime>06/12/2016 15:15:48</publishTime>
+      <publishTime>12/06/2016 15:15:48</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Web.dll">
-      <publishTime>07/12/2016 11:49:10</publishTime>
+      <publishTime>12/07/2016 11:49:10</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.WindowsServer.dll">
-      <publishTime>07/12/2016 11:50:34</publishTime>
+      <publishTime>12/07/2016 11:50:34</publishTime>
     </File>
     <File Include="bin/Microsoft.ApplicationInsights.dll">
-      <publishTime>06/12/2016 15:09:52</publishTime>
+      <publishTime>12/06/2016 15:09:52</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>06/15/2015 02:06:24</publishTime>
@@ -361,7 +361,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/28/2017 10:02:34</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/30/2017 03:02:51</publishTime>
+      <publishTime>07/30/2017 13:18:46</publishTime>
     </File>
   </ItemGroup>
 </Project>
