@@ -38,7 +38,8 @@ app.config(function ($routeProvider, $httpProvider, $locationProvider) {
 
 //Constantes da aplicação
 app.constant('ngLGTestUISettings', {
-    apiServiceBaseUri: 'http://localhost:58062/'    
+    //apiServiceBaseUri: 'http://localhost:58062/'    
+    apiServiceBaseUri: 'http://localhost:9001/'
 });
 
 /*

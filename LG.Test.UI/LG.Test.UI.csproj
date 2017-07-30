@@ -130,8 +130,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\background.jpg" />
     <Content Include="Images\cerveja.jpg" />
+    <Content Include="Images\feijao.jpg" />
+    <Content Include="Images\geladeira.jpg" />
+    <Content Include="Images\lg.jpg" />
     <Content Include="Images\lg.png" />
     <Content Include="Images\maodevaca.jpg" />
+    <Content Include="Images\racao.jpg" />
     <Content Include="Images\refri.jpg" />
     <Content Include="Images\sabao.jpg" />
     <Content Include="index.html" />
@@ -178,6 +182,7 @@
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="Content\bootstrap-social.less" />
     <Content Include="Content\bootstrap-social.scss" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

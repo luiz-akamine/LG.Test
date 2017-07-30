@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\LG.Test.Site</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app/app.js">
+      <publishTime>07/30/2017 03:07:55</publishTime>
+    </File>
+    <File Include="app/controllers/aboutController.js">
+      <publishTime>07/28/2017 13:08:18</publishTime>
+    </File>
+    <File Include="app/controllers/cartController.js">
+      <publishTime>07/29/2017 14:56:59</publishTime>
+    </File>
+    <File Include="app/controllers/productsController.js">
+      <publishTime>07/29/2017 14:54:24</publishTime>
+    </File>
+    <File Include="app/controllers/stockController.js">
+      <publishTime>07/29/2017 14:55:46</publishTime>
+    </File>
+    <File Include="app/services/cartService.js">
+      <publishTime>07/29/2017 02:58:11</publishTime>
+    </File>
+    <File Include="app/services/orderService.js">
+      <publishTime>07/29/2017 03:24:16</publishTime>
+    </File>
+    <File Include="app/services/productsService.js">
+      <publishTime>07/29/2017 14:39:48</publishTime>
+    </File>
+    <File Include="app/services/stockService.js">
+      <publishTime>07/29/2017 02:56:26</publishTime>
+    </File>
+    <File Include="app/views/about.html">
+      <publishTime>07/29/2017 03:35:07</publishTime>
+    </File>
+    <File Include="app/views/cart.html">
+      <publishTime>07/29/2017 14:56:28</publishTime>
+    </File>
+    <File Include="app/views/products.html">
+      <publishTime>07/29/2017 14:53:48</publishTime>
+    </File>
+    <File Include="app/views/stock.html">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>07/27/2017 13:34:39</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>07/27/2017 13:34:39</publishTime>
+    </File>
+    <File Include="bin/LG.Test.UI.dll">
+      <publishTime>07/30/2017 03:09:25</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/30/2016 16:07:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>07/12/2016 11:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>07/12/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>06/12/2016 15:15:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>07/12/2016 11:49:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>07/12/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>06/12/2016 15:09:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="Content/angular-material.css">
+      <publishTime>07/28/2017 17:36:56</publishTime>
+    </File>
+    <File Include="Content/angular-material.layout-attributes.css">
+      <publishTime>07/28/2017 17:36:56</publishTime>
+    </File>
+    <File Include="Content/angular-material.layout-attributes.min.css">
+      <publishTime>07/28/2017 17:36:56</publishTime>
+    </File>
+    <File Include="Content/angular-material.layouts.css">
+      <publishTime>07/28/2017 17:36:56</publishTime>
+    </File>
+    <File Include="Content/angular-material.layouts.ie_fixes.css">
+      <publishTime>07/28/2017 17:36:55</publishTime>
+    </File>
+    <File Include="Content/angular-material.layouts.min.css">
+      <publishTime>07/28/2017 17:36:55</publishTime>
+    </File>
+    <File Include="Content/angular-material.min.css">
+      <publishTime>07/28/2017 17:36:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap-social.css">
+      <publishTime>07/28/2017 19:47:31</publishTime>
+    </File>
+    <File Include="Content/bootstrap-social.less">
+      <publishTime>07/28/2017 19:47:31</publishTime>
+    </File>
+    <File Include="Content/bootstrap-social.scss">
+      <publishTime>07/28/2017 19:47:31</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="Content/font-awesome.css">
+      <publishTime>07/28/2017 19:57:34</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/bower.json">
+      <publishTime>07/28/2017 10:07:36</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/LICENSE">
+      <publishTime>07/28/2017 10:07:36</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/material-icons.css">
+      <publishTime>07/28/2017 10:24:44</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/material.brow-red.min.css">
+      <publishTime>07/28/2017 13:42:02</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/material.css">
+      <publishTime>07/28/2017 10:07:36</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/material.js">
+      <publishTime>07/28/2017 10:07:36</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/material.min.css">
+      <publishTime>07/28/2017 10:07:36</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/material.min.css.map">
+      <publishTime>07/28/2017 10:07:36</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/material.min.js">
+      <publishTime>07/28/2017 10:07:36</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/material.min.js.map">
+      <publishTime>07/28/2017 10:07:36</publishTime>
+    </File>
+    <File Include="Content/mdl-v1.1.2/package.json">
+      <publishTime>07/28/2017 10:07:35</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>07/28/2017 19:47:59</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="Images/background.jpg">
+      <publishTime>07/28/2017 11:37:06</publishTime>
+    </File>
+    <File Include="Images/cerveja.jpg">
+      <publishTime>07/28/2017 21:42:50</publishTime>
+    </File>
+    <File Include="Images/feijao.jpg">
+      <publishTime>07/28/2017 21:55:16</publishTime>
+    </File>
+    <File Include="Images/geladeira.jpg">
+      <publishTime>07/28/2017 22:02:49</publishTime>
+    </File>
+    <File Include="Images/lg.jpg">
+      <publishTime>07/28/2017 20:27:18</publishTime>
+    </File>
+    <File Include="Images/lg.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/maodevaca.jpg">
+      <publishTime>07/28/2017 19:01:26</publishTime>
+    </File>
+    <File Include="Images/racao.jpg">
+      <publishTime>07/28/2017 21:59:24</publishTime>
+    </File>
+    <File Include="Images/refri.jpg">
+      <publishTime>07/28/2017 21:46:44</publishTime>
+    </File>
+    <File Include="Images/sabao.jpg">
+      <publishTime>07/28/2017 21:50:21</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>07/29/2017 14:39:25</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/28/2017 17:36:57</publishTime>
+    </File>
+    <File Include="Scripts/angular-animate.js">
+      <publishTime>07/28/2017 17:36:46</publishTime>
+    </File>
+    <File Include="Scripts/angular-animate.min.js">
+      <publishTime>07/28/2017 17:36:46</publishTime>
+    </File>
+    <File Include="Scripts/angular-animate.min.js.map">
+      <publishTime>07/28/2017 17:36:46</publishTime>
+    </File>
+    <File Include="Scripts/angular-aria.js">
+      <publishTime>07/28/2017 17:36:50</publishTime>
+    </File>
+    <File Include="Scripts/angular-aria.min.js">
+      <publishTime>07/28/2017 17:36:50</publishTime>
+    </File>
+    <File Include="Scripts/angular-aria.min.js.map">
+      <publishTime>07/28/2017 17:36:49</publishTime>
+    </File>
+    <File Include="Scripts/angular-local-storage.js">
+      <publishTime>07/28/2017 13:15:32</publishTime>
+    </File>
+    <File Include="Scripts/angular-local-storage.min.js">
+      <publishTime>07/28/2017 13:15:32</publishTime>
+    </File>
+    <File Include="Scripts/angular-local-storage.min.js.map">
+      <publishTime>07/28/2017 13:15:32</publishTime>
+    </File>
+    <File Include="Scripts/angular-material-mocks.js">
+      <publishTime>07/28/2017 17:36:55</publishTime>
+    </File>
+    <File Include="Scripts/angular-material.js">
+      <publishTime>07/28/2017 17:36:55</publishTime>
+    </File>
+    <File Include="Scripts/angular-material.min.js">
+      <publishTime>07/28/2017 17:36:55</publishTime>
+    </File>
+    <File Include="Scripts/angular-mocks.js">
+      <publishTime>07/28/2017 10:02:17</publishTime>
+    </File>
+    <File Include="Scripts/angular-route.js">
+      <publishTime>07/28/2017 13:14:47</publishTime>
+    </File>
+    <File Include="Scripts/angular-route.min.js">
+      <publishTime>07/28/2017 13:14:47</publishTime>
+    </File>
+    <File Include="Scripts/angular-route.min.js.map">
+      <publishTime>07/28/2017 13:14:47</publishTime>
+    </File>
+    <File Include="Scripts/angular.js">
+      <publishTime>07/28/2017 10:02:17</publishTime>
+    </File>
+    <File Include="Scripts/angular.min.js">
+      <publishTime>07/28/2017 10:02:16</publishTime>
+    </File>
+    <File Include="Scripts/angular.min.js.map">
+      <publishTime>07/28/2017 10:02:16</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/28/2017 10:01:56</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/28/2017 10:01:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>07/28/2017 10:01:49</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>07/28/2017 10:01:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.map">
+      <publishTime>07/28/2017 10:01:48</publishTime>
+    </File>
+    <File Include="Scripts/moment-with-locales.js">
+      <publishTime>07/28/2017 10:02:34</publishTime>
+    </File>
+    <File Include="Scripts/moment-with-locales.min.js">
+      <publishTime>07/28/2017 10:02:34</publishTime>
+    </File>
+    <File Include="Scripts/moment.js">
+      <publishTime>07/28/2017 10:02:34</publishTime>
+    </File>
+    <File Include="Scripts/moment.min.js">
+      <publishTime>07/28/2017 10:02:34</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/30/2017 03:02:51</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
